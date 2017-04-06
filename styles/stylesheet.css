@@ -1,0 +1,115 @@
+.headercss {
+    width: 100%;
+    top: 0;
+    height: 150px;
+    background-color: white;
+    position: fixed;
+    background-color: white;
+}
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 1.5rem;
+  color: #663333;
+  text-decoration: none;
+}
+
+.navbar li {
+  display: inline;
+  float: left;
+  list-style-type: none;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.welcome {
+   text-align: center;
+   margin-left : 5em;
+   margin-right : 5em;
+   color: #2d2e2e;
+   line-height: 2.0;
+ }
+
+a:link, a:visited  {
+  text-decoration: none;
+}
+
+a {
+  color: #1a681a;
+  text-decoration: none;
+ }
+
+
+ html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  text-shadow: 1.5px 1.5px 1.5px #aaa;
+  }
+
+ footer {
+   color: #663333;
+   text-align: center;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   padding: 0.1rem;
+   background-color: #efefef;
+   clear: both;
+ }
+
+ img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#classes-txt, #private-lessons-txt {
+  text-align: center;
+}
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0.25rem;
+	margin: 0.25rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
